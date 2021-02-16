@@ -1,0 +1,56 @@
+//for the first form page
+.main-entry {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    // lets the area expand to push header to top and footer to bottom
+    justify-content: flex-start;
+    // form will be closer to top than bottom
+    align-items: center;
+    font-size: 0.5rem;
+    margin-top: 1rem;
+}
+
+.main-entry__form {
+    @include flexCenter;
+    flex-direction: column; 
+    min-width: 400px;
+    //makes button go underneath since it is now stacked
+}
+
+.main-entry__input {
+    //input don't inherit all styles like others
+    font-family: 'Robot', sans-serif;
+    font-size: 0.50rem;
+    letter-spacing: 0.05em;
+    //not root em, relates to font-size here
+    padding: 0.4em;
+    width: 90vw;
+    height: 4vh;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.main-entry__button {
+    background: $add-button;
+    color: $body-bg;
+    font-family: 'Robot', sans-serif;
+    font-size: 0.50rem;
+    letter-spacing: 0.05em;
+    width: 20vw;
+    height: 4vh;
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+
+.main-entry__button:hover {
+    background: #4d004d;
+    transition: 0.2s ease-in-out;
+}
+
+.main-entry__input:focus, .main-entry__button:focus {
+    outline: none;
+}

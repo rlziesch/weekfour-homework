@@ -1,0 +1,8 @@
+.main-results {
+    width: 100%;
+    @include flexCenter;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    // will push header and footer to correct spots
+}
+
